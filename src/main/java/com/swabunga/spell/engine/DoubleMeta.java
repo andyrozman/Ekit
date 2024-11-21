@@ -407,10 +407,10 @@ class DoubleMeta implements Transformator{
           else
             current += 1;
           break;
-        case 'Ç':
-          MetaphAdd(primary, 'S');
-          current += 1;
-          break;
+//        case 'ss':
+//          MetaphAdd(primary, 'S');
+//          current += 1;
+//          break;
         case 'C':
           if ((current > 1) && !isVowel(in, current - 2, length) && stringAt(in, (current
               - 1), 3, list1) && (in.charAt(current + 2) != 'I') && (in.charAt(
@@ -711,10 +711,10 @@ class DoubleMeta implements Transformator{
             current += 1;
           MetaphAdd(primary, 'N');
           break;
-        case 'Ñ':
-          current += 1;
-          MetaphAdd(primary, 'N');
-          break;
+//        case '':
+//          current += 1;
+//          MetaphAdd(primary, 'N');
+//          break;
         case 'P':
           if (in.charAt(current + 1) == 'N') {
             MetaphAdd(primary, 'F');

@@ -61,7 +61,7 @@ public class HTMLUtilities
 */
 	}
 
-	/** Diese Methode fügt durch String-Manipulation in jtpSource
+	/** Diese Methode fuegt durch String-Manipulation in jtpSource
 	  * ein neues Listenelement hinzu, content ist dabei der Text der in dem neuen
 	  * Element stehen soll
 	  */
@@ -115,9 +115,9 @@ public class HTMLUtilities
 		}
 	}
 
-	/** Diese Methode löscht durch Stringmanipulation in jtpSource das übergebene Element,
-	  * Alternative für removeElement in ExtendedHTMLDocument, mit closingTag wird angegeben
-	  * ob es ein schließenden Tag gibt
+	/** Diese Methode loescht durch Stringmanipulation in jtpSource das uebergebene Element,
+	  * Alternative fuer removeElement in ExtendedHTMLDocument, mit closingTag wird angegeben
+	  * ob es ein schliesenden Tag gibt
 	  */
 	public void removeTag(Element element, boolean closingTag)
 	{
@@ -184,7 +184,7 @@ public class HTMLUtilities
 	}
 
 	/** Diese Methode gibt jeweils den Start- und Endoffset des Elements
-	  * sowie dem entsprechenden schließenden Tag zurück
+	  * sowie dem entsprechenden schliesenden Tag zurueck
 	  */
 	public int[] getPositions(Element element, String source, boolean closingTag, String idString)
 	{
@@ -212,7 +212,7 @@ public class HTMLUtilities
 			// Position des 1. Treffer auf den End-Tag wird bestimmt
 			beginEndTag = source.indexOf(searchEndTagString, caret);
 			endEndTag = beginEndTag + searchEndTagString.length();
-			// Schleife läuft solange, bis keine neuen StartTags mehr gefunden werden
+			// Schleife leuuft solange, bis keine neuen StartTags mehr gefunden werden
 			int interncaret = position[1];
 			do
 			{
@@ -231,7 +231,7 @@ public class HTMLUtilities
 						interncaret = temphitpoint + searchString.length();
 					}
 				} while(flaghitup);
-				// hitUp enthält die Anzahl der neuen Start-Tags
+				// hitUp enthaelt die Anzahl der neuen Start-Tags
 				if(hitUp == 0)
 				{
 					end = true;
