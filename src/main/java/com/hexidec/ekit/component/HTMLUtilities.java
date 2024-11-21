@@ -257,7 +257,7 @@ public class HTMLUtilities
 		return position;
 	}
 
-	/* Diese Methode prüft ob der übergebene Tag sich in der Hierachie nach oben befindet */
+	/* Diese Methode prueft ob der uebergebene Tag sich in der Hierachie nach oben befindet */
 	public boolean checkParentsTag(HTML.Tag tag)
 	{
 		Element e = parent.getExtendedHtmlDoc().getParagraphElement(parent.getCaretPosition());
@@ -276,7 +276,7 @@ public class HTMLUtilities
 		return false;
 	}
 
-	/* Diese Methoden geben das erste gefundende dem übergebenen tags entsprechende Element zurück */
+	/* Diese Methoden geben das erste gefundende dem uebergebenen tags entsprechende Element zurueck */
 	public Element getListItemParent()
 	{
 		String listItemTag = HTML.Tag.LI.toString();
@@ -308,8 +308,8 @@ public class HTMLUtilities
 		return null;
 	}
 
-	/* Diese Methoden entfernen Attribute aus dem SimpleAttributeSet, gemäß den übergebenen Werten, und
-		geben das Ergebnis als SimpleAttributeSet zurück*/
+	/* Diese Methoden entfernen Attribute aus dem SimpleAttributeSet, gemeas den uebergebenen Werten, und
+		geben das Ergebnis als SimpleAttributeSet zurueck*/
 	public SimpleAttributeSet removeAttributeByKey(SimpleAttributeSet sourceAS, String removeKey)
 	{
 		SimpleAttributeSet temp = new SimpleAttributeSet();
@@ -396,7 +396,7 @@ public class HTMLUtilities
 		}
 	}
 
-	/* liefert den entsprechenden HTML.Tag zum Element zurück */
+	/* liefert den entsprechenden HTML.Tag zum Element zurueck */
 	public HTML.Tag getHTMLTag(Element e)
 	{
 		if(tags.containsKey(e.getName()))
